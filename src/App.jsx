@@ -10,7 +10,7 @@ function App() {
   }, []);
 
   const fetchBlogs = (author = "") => {
-    let url = `http://localhost:4000/getBlogs`;
+    let url = `https://blog-app-backend-5w5l.onrender.com/getBlogs`;
     if (author) {
       url += `?author=${encodeURIComponent(author)}`;
     }

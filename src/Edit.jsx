@@ -13,7 +13,7 @@ function Edit() {
 
     const obj = { name, email, message, id: idToEdit };
 
-    fetch("http://localhost:4000/updateData", {
+    fetch("https://blog-app-backend-5w5l.onrender.com/updateData", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

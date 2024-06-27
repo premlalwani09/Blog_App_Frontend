@@ -11,7 +11,7 @@ function AddMessage() {
 
     const obj = { name, email, message };
 
-    fetch("http://localhost:4000/saveData", {
+    fetch("https://blog-app-backend-5w5l.onrender.com/saveData", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -8,7 +8,7 @@ function Show() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:4000/showData");
+      const response = await fetch("https://blog-app-backend-5w5l.onrender.com/showData");
       const result = await response.json();
       setData(result);
     }
@@ -16,7 +16,7 @@ function Show() {
   }, []);
 
   function handleDelete(e, id) {
-    fetch("http://localhost:4000/deleteData", {
+    fetch("https://blog-app-backend-5w5l.onrender.com/deleteData", {
       method: "DELETE",
       headers: {
         "content-type": "application/json",
@@ -26,7 +26,7 @@ function Show() {
       .then((response) => response.json())
       .then((result) => {
         if (result === "Data Deleted")
-          window.location.href = "http://localhost:5173/show";
+          window.location.href = "https://blog-app-frontend-hw3x.onrender.com/show";
       });
   }
 

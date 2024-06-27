@@ -24,7 +24,7 @@ function AddBlog() {
     formData.append('content', data.content);
     formData.append('image', data.image);
 
-    fetch("http://localhost:4000/addBlog", {
+    fetch("https://blog-app-backend-5w5l.onrender.com/addBlog", {
       method: "POST",
       body: formData,
     })
