@@ -32,7 +32,7 @@ function Edit() {
 
   useEffect(() => {
     if (idToEdit) {
-      fetch("http://localhost:4000/getDataById/" + idToEdit)
+      fetch("https://blog-app-backend-5w5l.onrender.com/getDataById/" + idToEdit)
         .then((response) => response.json())
         .then((result) => {
           setName(result.name);
